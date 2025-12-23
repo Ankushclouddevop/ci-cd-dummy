@@ -1,0 +1,16 @@
+name: Dummy CI Pipeline
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: echo "Hello Ankush, your CI is working!"
+
